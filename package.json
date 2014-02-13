@@ -1,5 +1,5 @@
 {
-    "name": "25pp",
+    "name": "ppverifier",
     "version": "0.0.1",
     "description": "pp helper verification",
     "keywords": [
@@ -15,7 +15,7 @@
         "email": "glmmmmmm@163.com",
         "url": "http://aivirgin.net"
     },
-    "main": "./lib/pp_verifier",
+    "main": "./lib/ppverifier",
     "dependencies": {
         "reified": "*",
         "ursa": "*"
