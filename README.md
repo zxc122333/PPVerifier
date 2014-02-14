@@ -2,9 +2,9 @@
 接入25pp(pp助手)使用的服務端的驗證模塊，接入方服務服務端向25pp服務端請求驗證的模塊，包括登錄驗證和充值驗證
 
 ##功能
-###登錄驗證
+###登錄驗證 verifyLogin
 
-```javascript verifyLogin
+```javascript
 var PPVerifier = require('ppverifier')
 var verifier = new PPVerifier(*ppPublicKeyFilePath*) //ppPublicKeyFilePath是25pp提供的公鑰的文件
 verifier.verifyLogin(msg.token, function (err, res) {
@@ -18,7 +18,8 @@ verifier.verifyLogin(msg.token, function (err, res) {
         }
     }
 })
-```
+```  
+
 如果驗證成功返回格式如下
 ```json
 {
