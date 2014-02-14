@@ -60,4 +60,6 @@ verifier.verifyBill(order, function (err, result) {
 * 以`-----END PUBLIC KEY-----` 結尾  
 * 這是ppverifier使用的ursa模塊規定的
 
-##关于作者
+##TODO
+
+* 登錄驗證現在只能接受最新的32位的token，如果有需求要支持舊版pp的二進制格式的16位的token的話請在issue中留言
