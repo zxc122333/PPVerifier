@@ -30,17 +30,19 @@ verifier.verifyLogin(msg.token, function (err, res) {
 ```
 ###充值驗證 verifyBill
 order參數是pp服務器Post過來的數據轉換成的Object，格式如下
-```json
-{ order_id: '2014021400000000',
-  billno: 'billno123456789',
-  account: 'youraccount',
-  amount: '30.00',
-  status: '0',
-  app_id: '8888',
-  uuid: '',
-  zone: '0',
-  roleid: '0',
-  sign: 'puOnKnJiD/eDlhT9PyOtxC5oZ8urWdVijxKXSrq4qkSSAvz51PQ0gkXBAQv/Jgd67NPIWcqDMr3vDL7PUQM8uOywbLtKdIOtp71khkdIADWhD8+N5P47HlSoGNi1GbHOL6WyVr7VjR1L4cUeiUMpURI62jjG4koKO2kOXiM8DxSK5vFDh9ybHgz1BEgIHnxdvgNTQw5YQZqFAZL8hgnaHIDQwGCtLMcJmE1qq7HDo8KeOU3/A6D1fkxPC6unt/7rF4hqVbi0H9gkGLlRBDQn9ZBjnmwSnc3ZbqlpPIFpOCfQOhTHlWwXJVVJWJ4rVJyh5Y/ERLWjnVAkYC/lgLjhIA==' }
+```javascript
+{
+    order_id: '2014021400000000',
+    billno: 'billno123456789',
+    account: 'youraccount',
+    amount: '30.00',
+    status: '0',
+    app_id: '8888',
+    uuid: '',
+    zone: '0',
+    roleid: '0',
+    sign: 'puOnKnJiD/eDlhT9PyOtxC5oZ8urWdVijxKXSrq4qkSSAvz51PQ0gkXBAQv/Jgd67NPIWcqDMr3vDL7PUQM8uOywbLtKdIOtp71khkdIADWhD8+N5P47HlSoGNi1GbHOL6WyVr7VjR1L4cUeiUMpURI62jjG4koKO2kOXiM8DxSK5vFDh9ybHgz1BEgIHnxdvgNTQw5YQZqFAZL8hgnaHIDQwGCtLMcJmE1qq7HDo8KeOU3/A6D1fkxPC6unt/7rF4hqVbi0H9gkGLlRBDQn9ZBjnmwSnc3ZbqlpPIFpOCfQOhTHlWwXJVVJWJ4rVJyh5Y/ERLWjnVAkYC/lgLjhIA=='
+}
 ```
 如果您使用express做http服務器可以直接使用express的bodyPaser得到以上格式的數據
 ```javascript
